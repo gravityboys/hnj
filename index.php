@@ -1,13 +1,20 @@
+<html lang="pl">
 <head>
-
+    <title>Strona główna</title>
+    <meta charset=utf-8>
 </head>
-
-
-
-
-
+<body>
 <h1>
-<?php
-echo "Witaj swiecie!";
-?>
+    <?php
+    $title = 'Strona główna';
+    echo $title;
+    ?>
 </h1>
+<ol style="list-style: decimal-leading-zero">
+    <li><a href="syntax.php">Składnia</a></li>
+    <li><a href="variables.php">Zmienne</a></li>
+
+</ol>
+</body>
+</html>
+
