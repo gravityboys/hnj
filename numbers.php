@@ -38,9 +38,9 @@
 <?php echo($Float2).var_dump(is_float($Float2))
     ?>
 <br>
-<?php $kacper ="59.85"+100
+<?php $marcin ="59.85"+100
     ?>
-<?php var_dump(is_numeric($kacper))
+<?php var_dump(is_numeric($marcin))
     ?>
 <?php echo PHP_INT_MAX ?><br>
 <?php echo PHP_INT_MIN ?><br>
@@ -49,5 +49,3 @@
 <?php echo PHP_FLOAT_MIN ?><br>
 <?php echo PHP_FLOAT_DIG ?><br>
 <?php echo PHP_FLOAT_EPSILON ?><br>
-
-

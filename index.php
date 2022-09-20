@@ -15,6 +15,7 @@
     <li><a href="variables.php">Zmienne</a></li>
     <li><a href="strings.php">Stringi</a></li>
     <li><a href="numbers.php">Numery</a></li>
+    <li><a href="arraj.php">Array</a></li>
 </ol>
 </body>
 </html>
