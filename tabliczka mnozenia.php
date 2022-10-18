@@ -3,30 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <title>Tabliczka mnozenia</title>
+    <link rel="stylesheet" href="css.css">
 </head>
 <body>
 <a href="index.php">Strona główna</a>
 <br>
 
-<caption style="text-align: center"> Tabliczka mnozenia</caption>
-<table border="1">
+<table>
+    <caption>Tabliczka mnozenia</caption>
     <tr>
-        <th style="background-color: burlywood">&times;</th> <th style="background-color: burlywood">1</th>	<th style="background-color: burlywood">2</th> <th style="background-color: burlywood">3</th> <th style="background-color: burlywood">4</th> <th style="background-color: burlywood">5</th> <th style="background-color: burlywood">6</th> <th style="background-color: burlywood">7</th> <th style="background-color: burlywood">8</th> <th style="background-color: burlywood">9</th> <th style="background-color: burlywood">10</th>
-    </tr>
-
-    <?php
-    for ($height = 1; $height <= 10; $height++) {
-        echo "<tr>\n";
-
-        for ($width = 1; $width <= 10; $width++) {
-            echo "<td style='background-color: beige'>";
-            echo $width * $height;
-            echo "</td>\n";
+        <th>&times;</th>
+        <?php
+        for ($col =1; $col <=10; $col++) {
+            echo '<th>' . $col . '</th>';
         }
-
+        ?>
+    </tr>
+    <?php
+    for ($row =1; $row <= 10; $row++) {
+        echo '<tr><th>' . $row . '</th>';
+        for ($col =1; $col <= 10; $col++) {
+                if ($row == $col) {
+                    echo '<td style="background-color: bisque;">' . $col * $row . '</td>';
+                } else {
+                    echo '<td>' . $col * $row . '</td>';
+                }
+        }
         echo "</tr>\n";
     }
     ?>
-
 </table>
-
