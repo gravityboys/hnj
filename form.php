@@ -1,6 +1,6 @@
 <html lang="pl">
 <head>
-    <title></title>
+    <title>gfhf</title>
     <link rel="stylesheet" href="css.css"
 </head>
 <body>

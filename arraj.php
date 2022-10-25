@@ -67,5 +67,6 @@ $d = array("Skazani na Shawskank" => "dramat", "Nietykalni" => "biograficzny", "
             echo '<tr><td>'.$key.'</td><td>'.$value.'</td></tr>';
         }
         ?>
+
 </body>
 
